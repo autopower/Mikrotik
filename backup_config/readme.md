@@ -1,7 +1,7 @@
-#Backup Mikrotik config files
+# Backup Mikrotik config files
 Simple script to backup Mikrotik config files from Linux host
 
-##Description
+## Description
 Script create on Mikrotik host:
 * /backup directory in files
 * import public key from /files
@@ -9,7 +9,7 @@ Script create on Mikrotik host:
 
 Schedule (via systemctl or cron) shell script on linux host to download files created on Mikrotik host/hosts
 
-##Setup
+## Setup
 * upload mt_hosts.txt and backup_config.sh to Linux host
 * Please edit mt_hosts.txt with IP addresses of your mtik hosts
 * please edit backup_config.sh for actual ssh port
@@ -18,6 +18,6 @@ Schedule (via systemctl or cron) shell script on linux host to download files cr
 * import this script on host `import backupConfigSetup.rsc`
 * check script with `/system script run backupConfig`
 
-##Note
+## Note
 If you are using other admin user as `admin`, please edit backupConfigSetup.rsc accordingly.
 
