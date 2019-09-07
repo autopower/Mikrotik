@@ -4,8 +4,9 @@ Simple script to backup Mikrotik config to `/files` and then copy it to Linux ho
 ## Description
 You'll need public key from Linux host to use script.
 On Mikrotik host script:
-* create /backup directory in files
-* import public key from /files
+* create `/backup` directory in files
+* create user `remote` and group `remote`
+* import public key from /files and assign it to user `remote`
 * create script for backuping both system and system config, schedule it on 22:00
 You must manually schedule (via systemctl or cron) shell script on Linux host to download files created on Mikrotik host/hosts.
 
