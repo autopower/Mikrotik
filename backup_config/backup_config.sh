@@ -5,3 +5,4 @@ for line in $filelines ; do
     echo "Connecting to $line..."
     scp -i ~/.ssh/id_rsa -rp -P 40022 remote@$line:/backup/ /home/root/mikrotik/
 done
+find /home/root/mikrotik/backup/* -mtime +7 -exec rm {} \;
