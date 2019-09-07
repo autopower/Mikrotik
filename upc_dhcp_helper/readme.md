@@ -4,4 +4,5 @@ This script checks for modem IP address, if correct IP address assigned, routes 
 Please use wancheckuni script to periodically check default gateway.
 
 ## Setup
-Please copy this script to IP, DHCP Client, Advanced tab of wan interface.
+Please copy upc script to IP, DHCP Client, Advanced tab of default/primary wan interface. Copy wan2 script to secondary wan interface.
+
