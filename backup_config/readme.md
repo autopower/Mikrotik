@@ -18,6 +18,9 @@ Schedule (via systemctl or cron) shell script on linux host to download files cr
 * import this script on host `import backupConfigSetup.rsc`
 * check script with `/system script run backupConfig`
 
+## Download directly to Mikrotik
+`/tool fetch url="https://raw.githubusercontent.com/autopower/Mikrotik/master/backup_config/backupConfigSetup.rsc"`
+
 ## Note
 If you are using other admin user as `admin`, please edit backupConfigSetup.rsc accordingly.
 
