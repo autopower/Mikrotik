@@ -12,7 +12,7 @@ Schedule (via systemctl or cron) shell script on Linux host to download files cr
 ## Setup
 * upload mt_hosts.txt and backup_config.sh to Linux host, this file contains IP addresses or names of Mikrotik host/hosts
 * Please edit mt_hosts.txt with IP addresses of your mtik hosts
-* please edit backup_config.sh for actual ssh port and/or destination path
+* please edit backup_config.sh for actual ssh port (`40022` used in script), username (`remote` used in script) and/or destination path (`/home/root/mikrotik` used)
 * upload backupConfigSetup.rsc to Mikrotik host
 * upload id_rsa.pub public key to Mikrotik host
 * import this script on host `import backupConfigSetup.rsc`
